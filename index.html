@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat Widget Test Page</h1>
+    <p>This page is used to test the Leena chat widget. The chat widget should load automatically when the page loads.</p>
+    <p>Look for the chat widget icon/button in the bottom corner of the page.</p>
+    <script defer>
+        function loadChatWidget() {
+          chatteron.init({
+            clientId: "Guc9tviQgj2lI9V8vhrcG",
+          });
+        }
+    </script>
+    <script defer src="https://staging-web.leena.ai/scripts/sdk.js" onload="loadChatWidget();">
+    </script>
+</body>
+</html>
