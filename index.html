@@ -21,14 +21,35 @@
     <h1>Chat Widget Test Page</h1>
     <p>This page is used to test the Leena chat widget. The chat widget should load automatically when the page loads.</p>
     <p>Look for the chat widget icon/button in the bottom corner of the page.</p>
-    <script defer>
-        function loadChatWidget() {
-          chatteron.init({
-            clientId: "Guc9tviQgj2lI9V8vhrcG",
-          });
-        }
-    </script>
-    <script defer src="https://staging-web.leena.ai/scripts/sdk.js" onload="loadChatWidget();">
+<script defer>
+    function loadChatWidget() {
+      chatteron.init({
+        clientId: "UJ-r_N5CStXz07FeS0Gv6",
+        bubbleUrl: "https://hm-s3.leena.ai/chatteron.io/public/bots/627a05fe830b1c16444e656f/assets/68ef91d113f7bcfd5456b2a9/KA1bVfGmd58htXgr8M5AR98v__xlTIaE6ySNKvazEWbHmHt8vJ5WahWVOJwJiY6Eo_GxqlgN/AskMeBot_250x250.png",
+        theme: {
+          bubble: {
+            bottom: '105px',
+          },
+        },
+        height: 550,
+      });
+    }
+  </script>
+  <script defer src="https://web.leena.ai/scripts/sdk.js" onLoad="loadChatWidget();"></script>
+  <link rel="stylesheet" href="https://s3.chatteron.io/chatteron.io/public/bots/5c1a194cec95960019188cbb/animate.min.css" />
+  <style>
+    .chatBubble {
+      -webkit-animation: bounce 3s;
+      animation: bounce 3s;
+      animation-iteration-count: 1;
+    }
+  
+    .chatBubble:hover {
+      -webkit-animation: shake 12s;
+      animation: shake 12s;
+      animation-iteration-count: infinite;
+    }
+  </style>
     </script>
 </body>
 </html>
